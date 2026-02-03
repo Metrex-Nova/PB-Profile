@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paras Balani Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="stars" id="stars"></div>
+    <nav>
+        <div class="logo">
+            <img class="logo" src="./assets/images/logo.png">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#talks">Talks</a></li>
+            <li><a href="#think-space">Think Space</a></li>
+            <li><a href="#contact">Conatact</a></li>
+        </ul>
+        <button class="mode-toggle" id="modeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <div class="home-content">
+                <div class="greeting">Hello, I'm</div>
+                <h1 class="name">Paras Balani</h1>
+                <div class="dynamic-text">
+                    <span class="" typed-text id="typed-text"></span>
+                </div>
+                <p class="description">I am an average mathematician, and thus a strong computer scientist, physicist,
+                    biologist, chemist, geologist, astronomer, cosmologist, economist, engineer, statistician,
+                    philosopher—and, above all, a content person.</p>
+            </div>
+            <div class="home-image">
+                <div class="image-wrapper">
+                    <img src="./assets/images/MyImage.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="research">
+            <h2 class="section-title">Research</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3 class="research-title">Traversible Wormholes in F(R, L, T) gravity using Vander walls EOS</h3>
+                    <p class="research-details">Published in Annalyn Der Physik. Derived novel traversable wormhole
+                        solutions in a modified gravity framework with non-minimal matter-geometry coupling</p>
+                    <span class="research-tag">Published 2025</span>
+                    <span class="research-link"><a href="https://onlinelibrary.wiley.com/doi/10.1002/andp.202500408"
+                            target="_blank">Paper Link</a></span>
+                    <span class="github-link"><a href="https://github.com/Metrex-Nova/pytearcat-wormhole-metric-python"
+                            target="_blank">Github Link</a></span>
+
+                </div>
+                <div class="research-card">
+                    <h3 class="research-title">NFW-Solition Wormholes ray tracing in General relativity.</h3>
+                    <p class="research-details">Ray tracing of wormholes hosted by dark matter in our universe
+                        quantified by NFW and Soliton profiles in a general relativity framework.</p>
+                    <span class="research-tag">In Progress</span>
+                    <!-- <span class="research-link"><a href="https://onlinelibrary.wiley.com/doi/10.1002/andp.202500408" target="_blank">Paper Link</a></span> -->
+                </div>
+                <div class="research-card">
+                    <h3 class="research-title">Traversible Wormholes ray tracing in f(R,L,T) gravity.</h3>
+                    <p class="research-details">Ray tracing of wormholes hosted by anisotropy in radial and tangential
+                        poressures in local spacetime in a f(R,L,T) gravity framework.</p>
+                    <span class="research-tag">In Progress</span>
+                    <!-- <span class="research-link"><a href="https://onlinelibrary.wiley.com/doi/10.1002/andp.202500408" target="_blank">Paper Link</a></span> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section  -->
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-title">Research Intern</h3>
+                    <div class="experience-date">Sep 2024 - Present</div>
+                </div>
+                <p class="experience-location">BITS Pilani, Hyderabad Campus, Telangana, India</p>
+                <p class="experience-details">Project: Astrophysical Objects in General Relativity and Modified
+                    Gravities.
+                </p>
+                <p class="experience-details">
+                    Tech: Numerical Analysis, General Relativity, Pytearcat, Matlab, Mathematica, Latex.
+                </p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-title">Data Science Intern</h3>
+                    <div class="experience-date">June 2025</div>
+                </div>
+                <p class="experience-location">Amukha Technologies Private Limited, Mumbai, India</p>
+                <p class="experience-details">Project: To Developed a risk-based loan pricing Index to improved
+                    prediction accuracy by loan pricing dynamics of Indian financial market system. Engineered financial
+                    features and built ML
+                    pipelines.</p>
+                <p class="experience-details">
+                    Tech: XGBoost, Random Forest, SVM, Linear/Polynomial Regression.
+                </p>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Logic Parser" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Logic Parser</h3>
+                        <p class="project-description">A propositional logic system in C with 18 algorithms for parsing,
+                            CNF conversion, truth table generation, and DIMACS output for SAT solvers.</p>
+                        <span class="research-link"><a href="https://logic-assignment-sspp.vercel.app"
+                                target="_blank">Website
+                                Link</a></span>
+                        <span class="github-link"><a href="https://github.com/Metrex-Nova/LogicAssignmentSSPP"
+                                target="_blank">Github Link</a></span>
+                        <span class="github-link"><a href="https://logic-assignment-sspp.vercel.app/web3.html"
+                                target="_blank">Demo Link</a></span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="LPI Model" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">LPI Model</h3>
+                        <p class="project-description">Industry-grade loan pricing model using XGBoost and Random
+                            Forest, deployed via Streamlit. Focus on interpretability and regulatory alignment.</p>
+                        <span class="github-link"><a href="https://github.com/Metrex-Nova/PS1-project"
+                                target="_blank">Github Link</a></span>
+
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Queuing Analysis" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Queuing Analysis</h3>
+                        <p class="project-description">Analyzed the Iridium satellite network using (M/M/s) queueing
+                            models in Python to determine optimal buffer size.</p>
+                    </div>
+                    <span class="research-link"><a
+                            href="https://github.com/Metrex-Nova/mms-queueing-simulation-python/blob/main/Operation_Research_Assignment.pdf"
+                            target="_blank">Paper Link</a></span>
+                    <span class="github-link"><a href="https://github.com/Metrex-Nova/mms-queueing-simulation-python"
+                            target="_blank">Github Link</a></span>
+
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Dafney Verification" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Dafney Verification Experiments</h3>
+                        <p class="project-description">Formal verification of distributed systems using the Dafny
+                            verification language to prove correctness properties.</p>
+                        <span class="research-link"><a href="https://dafny-verification-experiments.vercel.app/"
+                                target="_blank">Website
+                                Link</a></span>
+                        <span class="github-link"><a
+                                href="https://github.com/Metrex-Nova/Dafny-Verification-Experiments"
+                                target="_blank">Github Link</a></span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">TypeScript</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">C</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">Mathematica</div>
+                <div class="skill-item">Next.js 14</div>
+                <div class="skill-item">React/React Native</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">Scikit-learn</div>
+                <div class="skill-item">XGBoost</div>
+                <div class="skill-item">Numerical Relativity</div>
+                <div class="skill-item">Differential Geometry</div>
+                <div class="skill-item">Tensor Calculus</div>
+                <div class="skill-item">Git</div>
+                <div class="skill-item">Docker</div>
+                <div class="skill-item">LaTeX</div>
+            </div>
+        </section>
+
+        <!-- Talks and Presentations Section -->
+        <section id="talks">
+            <h2 class="section-title">Talks & Presentations</h2>
+            <div class="talks-container">
+                <div class="talk-item">
+                    <h3 class="talk-title">Could Dark Matter Be Made of Wormholes?</h3>
+                    <p class="talk-location">Axiom, BITS Pilani</p>
+                </div>
+                <div class="talk-item">
+                    <h3 class="talk-title">Traversable Wormholes in f(R, L_m, T) Gravity Using Anisotropic Fluids</h3>
+                    <p class="talk-location">Research Presentation</p>
+                </div>
+                <div class="talk-item">
+                    <h3 class="talk-title">Quantum Gravity Approaches to Cosmological Singularities</h3>
+                    <p class="talk-location">International Conference on Gravitation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Think Space Section -->
+        <section id="think-space">
+            <h2 class="section-title">Think Space</h2>
+            <div class="courses-grid">
+                <div class="course-item">
+                    <h3 class="course-name">Cosmology</h3>
+                    <p class="course-details">FRW Metric, Cosmic Inflation, Dark Matter, CMB, Big Bang Nucleosynthesis,
+                        Cosmological Constant, Hubble Parameter</p>
+                    <span class="course-grade">Grade: A (Institute Topper)</span>
+                </div>
+                <div class="course-item">
+                    <h3 class="course-name">Numerical Analysis</h3>
+                    <p class="course-details">Finite Difference Methods, PDE Solvers, Runge-Kutta Methods, Error
+                        Analysis, Gaussian Quadrature</p>
+                    <span class="course-grade">Grade: A-</span>
+                </div>
+                <div class="course-item">
+                    <h3 class="course-name">Optimization Theory</h3>
+                    <p class="course-details">Linear/Nonlinear Programming, KKT Conditions, Simplex Method, Duality
+                        Theory, Genetic Algorithms</p>
+                    <span class="course-grade">Grade: A</span>
+                </div>
+                <div class="course-item">
+                    <h3 class="course-name">Graphs and Networks</h3>
+                    <p class="course-details">Graph Algorithms, Network Flows, Spanning Trees, Planarity, Chromatic
+                        Number, Shortest Path Problems</p>
+                    <span class="course-grade">Grade: A</span>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-container">
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Work Email</h3>
+                        <a href="mailto:parasbalani748@gmail.com">parasbalani748@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-university"></i>
+                        <h3>School Email</h3>
+                        <a href="mailto:f20230738@hyderabad.bits-pilani.ac.in">f20230738@hyderabad.bits-pilani.ac.in</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <a href="tel:+918529818697">+91 85298 18697</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/pbalani-mnova/"
+                            target="_blank">linkedin.com/in/pbalani-mnova</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-flask"></i>
+                        <h3>ResearchGate</h3>
+                        <a href="https://www.researchgate.net/scientific-contributions/Paras-Balani-2331032192"
+                            target="_blank">ResearchGate Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/Metrex-Nova" target="_blank">github.com/Metrex-Nova</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Paras Balani. All rights reserved.</p>
+            <p>Dual Degree: B.Tech. in Computer Science & M.Sc. in Mathematics</p>
+            <p>BITS Pilani, Hyderabad Campus | CGPA: 8.76/10</p>
+
+            <div class="footer-links">
+                <a href="mailto:parasbalani748@gmail.com">
+                    <i class="fas fa-envelope"></i> Work Email
+                </a>
+                <a href="mailto:f20230738@hyderabad.bits-pilani.ac.in">
+                    <i class="fas fa-university"></i> School Email
+                </a>
+                <a href="tel:+918529818697">
+                    <i class="fas fa-phone"></i> +91 85298 18697
+                </a>
+                <a href="https://www.linkedin.com/in/pbalani-mnova/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.researchgate.net/scientific-contributions/Paras-Balani-2331032192" target="_blank">
+                    <i class="fas fa-flask"></i> ResearchGate
+                </a>
+                <a href="https://github.com/Metrex-Nova" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+
+            <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--secondary-color);">
+                "The only way to learn mathematics is to do mathematics." – Paul Halmos
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="app2.js"></script>
+</body>
+
+</html>
