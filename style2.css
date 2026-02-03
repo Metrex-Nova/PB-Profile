@@ -426,6 +426,9 @@ section{
     color: var(--accent-color);
     font-weight: 500;
 }
+.experience-details{
+    color: var(--text-color);
+}
 
 
 /* Projects Section */
