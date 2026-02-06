@@ -47,7 +47,7 @@ html {
 
 
 body {
-    font-family: "Bitcount Single", system-ui;
+    /* font-family: "Bitcount Single", system-ui;
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
@@ -55,7 +55,8 @@ body {
         "slnt" 4,
         "CRSV" 0.5,
         "ELSH" 40,
-        "ELXP" 40;
+        "ELXP" 40; */
+    font-family: "Poppins", sans-serif;
     background-color: var(--bg-color);
     /* color: var(--text-color);
     line-height: 1.6;
