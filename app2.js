@@ -1,101 +1,67 @@
-// Dark/light Mode toggle
-
-const modeToggle = document.getElementById("modeToggle");
-const body = document.body;
+// Dark / light mode
+const modeToggle = document.getElementById('modeToggle');
 const icon = modeToggle.querySelector('i');
 
-const preferDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-const currentTheme = localStorage.getItem('theme');
-
-if ((currentTheme === 'dark') || (!currentTheme && preferDarkScheme.matches)) {
-    body.classList.add('dark-mode');
-    icon.classList.remove('fa-moon');
-    icon.classList.add('fa-sun');
+function setTheme(dark) {
+    document.body.classList.toggle('dark-mode', dark);
+    icon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
 }
-generateStars();
+
+let saved = null;
+try { saved = localStorage.getItem('theme'); } catch (e) {}
+setTheme(saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches);
+
 modeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    if (body.classList.contains('dark-mode')) {
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-        localStorage.setItem('theme', 'dark');
-        generateStars();
-    } else {
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
-        localStorage.setItem('theme', 'light');
-        generateStars();
-    }
+    const dark = !document.body.classList.contains('dark-mode');
+    setTheme(dark);
+    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
 });
 
-function generateStars() {
-    const starsContainer = document.getElementById('stars');
-    starsContainer.innerHTML = '';
-    for (let i = 0; i < 300; i++) {
-        const star = document.createElement('div');
-        star.classList.add('star');
-
-        const size = Math.random() * 2 + 1;
-        star.style.width = `${size}px`;
-        star.style.height = `${size}px`;
-
-        star.style.left = `${Math.random() * 100}vw`;
-        star.style.top = `${Math.random() * 100}vh`;
-
-        star.style.opacity = Math.random() * 0.7 + 0.3;
-        star.style.animationDelay = `${Math.random() * 5}s`;
-
-        starsContainer.appendChild(star);
-    }
+// Flowers drift gently with scroll (parallax)
+const flowers = document.querySelectorAll('.flower');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!reduceMotion) {
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+            const y = window.scrollY;
+            flowers.forEach((f, i) => {
+                const offset = Math.sin(y / 500 + i * 1.3) * (40 + i * 10);
+                f.style.setProperty('--py', `${offset.toFixed(1)}px`);
+            });
+            ticking = false;
+        });
+    }, { passive: true });
 }
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('href');
-
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 80,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-const typedTextSpan = document.getElementById('typed-text');
-const textArray = ["Mathematician", "Researcher", "Computer Scientist", "Physicist"];
-const typingDelay = 100;
-const erasingDelay = 80;
-const newTextDelay = 1500;
-let textArrayIndex = 0;
-let charIndex = 0;
+// Typing effect
+const typed = document.getElementById('typed-text');
+const words = ['Mathematician', 'Researcher', 'Computer Scientist', 'Physicist'];
+let w = 0, c = 0;
 
 function type() {
-    if (charIndex < textArray[textArrayIndex].length) {
-        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, typingDelay);
+    if (c < words[w].length) {
+        typed.textContent += words[w].charAt(c++);
+        setTimeout(type, 90);
     } else {
-        setTimeout(erase, newTextDelay);
+        setTimeout(erase, 1500);
     }
 }
 
 function erase() {
-    if (charIndex > 0) {
-        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(erase, erasingDelay);
+    if (c > 0) {
+        typed.textContent = words[w].substring(0, --c);
+        setTimeout(erase, 60);
     } else {
-        textArrayIndex++;
-        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-        setTimeout(type, typingDelay + 500);
+        w = (w + 1) % words.length;
+        setTimeout(type, 400);
     }
 }
 
-// Initialize typing effect
-document.addEventListener('DOMContentLoaded', function () {
-    setTimeout(type, 1000);
-});
+if (reduceMotion) {
+    typed.textContent = words.join(' · ');
+} else {
+    setTimeout(type, 600);
+}

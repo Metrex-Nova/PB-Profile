@@ -4,334 +4,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paras Balani Portfolio</title>
+    <title>Paras Balani</title>
+    <meta name="description" content="Paras Balani — machine learning for science, neural operators, gravitational physics, LLM safety. BITS Pilani.">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="stars" id="stars"></div>
+    <!-- drifting pressed flowers (decorative) -->
+    <div class="flowers" aria-hidden="true">
+        <img src="./assets/images/flower.png" alt="" class="flower f1">
+        <img src="./assets/images/flower.png" alt="" class="flower f2">
+        <img src="./assets/images/flower.png" alt="" class="flower f3">
+        <img src="./assets/images/flower.png" alt="" class="flower f4">
+        <img src="./assets/images/flower.png" alt="" class="flower f5">
+        <img src="./assets/images/flower.png" alt="" class="flower f6">
+    </div>
+
     <nav>
-        <div class="logo">
-            <img class="logo" src="logo.png">
-        </div>
+        <a href="#home" class="logo">P<span>B</span></a>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#research">Research</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#talks">Talks</a></li>
-            <li><a href="#think-space">Think Space</a></li>
-            <li><a href="#contact">Conatact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="mode-toggle" id="modeToggle">
+        <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">
             <i class="fas fa-moon"></i>
         </button>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Home Section -->
+    <main class="container">
+        <!-- Home -->
         <section id="home" class="home">
             <div class="home-content">
-                <div class="greeting">Hello, I'm</div>
+                <p class="eyebrow">Machine Learning for Science · Physics · Mathematics</p>
                 <h1 class="name">Paras Balani</h1>
-                <div class="dynamic-text">
-                    <span class="" typed-text id="typed-text"></span>
+                <p class="dynamic-text"><span id="typed-text"></span><span class="cursor">|</span></p>
+                <p class="description">I am an average mathematician, and thus a strong computer scientist, physicist,
+                    biologist, chemist, geologist, astronomer, cosmologist, economist, engineer, statistician,
+                    philosopher—and, above all, a content person.</p>
+                <div class="home-links">
+                    <a href="https://github.com/Metrex-Nova" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://scholar.google.com/citations?user=f8gTBRsAAAAJ" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Scholar</a>
+                    <a href="https://linkedin.com/in/pbalani-mnova/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="mailto:f20230738@hyderabad.bits-pilani.ac.in"><i class="fas fa-envelope"></i> Email</a>
                 </div>
-                <p class="description">Research-oriented undergraduate pursuing a dual degree in Computer Science and Mathematics, with
-                                        strong interests in theoretical physics, applied mathematics, and computational modeling. Experienced in
-                                        gravity and cosmology research with a peer-reviewed publication, and motivated to deepen understanding
-                                        through mentorship-driven research in physics and applied mathematics.
-                </p>
             </div>
             <div class="home-image">
-                <div class="image-wrapper">
-                    <img src="MyImage.png" alt="">
+                <img src="./assets/images/paras.jpg" alt="Paras Balani">
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <figure class="statue">
+                <img src="./assets/images/statue.jpg" alt="Classical marble statue in an arched niche">
+            </figure>
+            <div class="about-text">
+                <h2 class="section-title">About</h2>
+                <p>Dual-degree student (B.E. Computer Science &amp; M.Sc. Mathematics, Minor in Data Science) at BITS
+                    Pilani, working at the intersection of deep learning and physics.</p>
+                <p>As a Google Summer of Code contributor with ML4SCI, I designed new neural operator architectures for
+                    PDE surrogates and gravitational lensing, with work under review at ICLR 2027 and accepted at the
+                    ML4PS workshop. I've published in <em>Annalen der Physik</em> and <em>Physics Letters B</em> on
+                    modified-gravity wormholes, combining analytical derivation with numerical simulation. I also work
+                    on LLM safety and evaluation.</p>
+                <div class="interests">
+                    <span>Machine Learning for Science</span>
+                    <span>Deep Learning</span>
+                    <span>Computational Physics</span>
+                </div>
+                <div class="edu">
+                    <div class="edu-row">
+                        <div>
+                            <strong>BITS Pilani, Hyderabad Campus</strong>
+                            <span>B.E. Computer Science &amp; M.Sc. Mathematics, Minor in Data Science</span>
+                        </div>
+                        <div class="meta">CGPA 8.60/10<br>Aug 2023 – Present</div>
+                    </div>
+                    <div class="edu-row">
+                        <div>
+                            <strong>Vidya Sagar Senior Secondary School (CBSE)</strong>
+                            <span>Class XII</span>
+                        </div>
+                        <div class="meta">93.4%<br>2022 – 2023</div>
+                    </div>
+                    <div class="edu-row">
+                        <div>
+                            <strong>Maheshwari Public School (CBSE)</strong>
+                            <span>Class X</span>
+                        </div>
+                        <div class="meta">95.6%<br>2020 – 2021</div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Research -->
         <section id="research">
-            <h2 class="section-title">Research</h2>
-            <div class="research-grid">
-                <div class="research-card">
-                    <h3 class="research-title">Traversible Wormholes in F(R, L, T) gravity using Vander walls EOS</h3>
-                    <p class="research-details">Published in Annalyn Der Physik. Derived novel traversable wormhole
-                        solutions in a modified gravity framework with non-minimal matter-geometry coupling</p>
-                    <span class="research-tag">Published 2025</span>
-                    <span class="research-link"><a href="https://onlinelibrary.wiley.com/doi/10.1002/andp.202500408"
-                            target="_blank">Paper Link</a></span>
-                    <span class="github-link"><a href="https://github.com/Metrex-Nova/pytearcat-wormhole-metric-python"
-                            target="_blank">Github Link</a></span>
+            <h2 class="section-title">Publications &amp; Preprints</h2>
 
-                </div>
-                <div class="research-card">
-                    <h3 class="research-title">NFW-Solition Wormholes ray tracing in General relativity.</h3>
-                    <p class="research-details">Ray tracing of wormholes hosted by dark matter in our universe
-                        quantified by NFW and Soliton profiles in a general relativity framework.</p>
-                    <span class="research-tag">In Progress</span>
-                    <!-- <span class="research-link"><a href="https://onlinelibrary.wiley.com/doi/10.1002/andp.202500408" target="_blank">Paper Link</a></span> -->
-                </div>
-                <div class="research-card">
-                    <h3 class="research-title">Traversible Wormholes ray tracing in f(R,L,T) gravity.</h3>
-                    <p class="research-details">Ray tracing of wormholes hosted by anisotropy in radial and tangential
-                        poressures in local spacetime in a f(R,L,T) gravity framework.</p>
-                    <span class="research-tag">In Progress</span>
-                    <!-- <span class="research-link"><a href="https://onlinelibrary.wiley.com/doi/10.1002/andp.202500408" target="_blank">Paper Link</a></span> -->
-                </div>
+            <h3 class="group-title">Machine Learning</h3>
+            <div class="pub-list">
+                <article class="pub">
+                    <div class="pub-tag">Under review · ICLR 2027</div>
+                    <h4>Basis-Adaptive Learned Asymptotic Nonlocal Inversion Neural Operator (BALANI-NO) for PDE
+                        Surrogates and Gravitational Lensing</h4>
+                    <p class="authors"><u>P. Balani</u>, P. Reddy, A. Batra, L. Paris, S. R. Mereddy, M. W. Toomey, S. Gleyzer</p>
+                    <p>A spectral neural operator whose symbol adds a learned rational pole branch in |k| to a small
+                        low-mode table, making it grid-independent and axis-unbiased. Against ten baselines it has the
+                        lowest zero-shot error on Darcy flow, Navier–Stokes and every lensing split. Currently in the
+                        top 15% of submissions.</p>
+                    <div class="links"><a href="https://github.com/Metrex-Nova/Neural_operators_for_lensing_and_pde_benchmarks" target="_blank" rel="noopener">Code</a></div>
+                </article>
+                <article class="pub">
+                    <div class="pub-tag">Accepted · ML4PS Workshop 2026</div>
+                    <h4>Pooling Discards Resolution-Invariant Structure: An Architecture and Ablation Study on Darcy Flow</h4>
+                    <p class="authors"><u>P. Balani</u>, P. Reddy, M. W. Toomey, S. Gleyzer</p>
+                    <p>Zero-shot 16 → 32 resolution transfer across five operator architectures: FNO degrades 1.27×
+                        vs. 7.77× for a CNN, and removing pooling cuts degradation from 1.88× to 1.32× (UNO) and 2.12×
+                        to 1.35× (HC-UNO).</p>
+                </article>
+            </div>
+
+            <h3 class="group-title">Gravitational Physics</h3>
+            <div class="pub-list">
+                <article class="pub">
+                    <div class="pub-tag">Published · Annalen der Physik 2026</div>
+                    <h4>Traversable Wormholes with Van der Waals Equation of State in f(R, L, T) Gravity</h4>
+                    <p class="authors"><u>P. Balani</u>, C. S. Medisetti, Gouri M, S. Pradhan, P. K. Sahoo</p>
+                    <p>New traversable wormhole solutions whose exotic-matter requirement can be tuned down, obtained by
+                        closing the field equations with a Van der Waals equation of state.</p>
+                    <div class="links">
+                        <a href="https://doi.org/10.1002/andp.202500408" target="_blank" rel="noopener">Paper</a>
+                        <a href="https://github.com/Metrex-Nova/pytearcat-wormhole-metric-python" target="_blank" rel="noopener">Code</a>
+                    </div>
+                </article>
+                <article class="pub">
+                    <div class="pub-tag">Published · Physics Letters B 2026</div>
+                    <h4>Optical and Dynamical Signatures of Padé Approximated Wormholes in f(T) Gravity</h4>
+                    <p class="authors">S. Pradhan, <u>P. Balani</u>, P. K. Sahoo</p>
+                    <p>Wormholes from [1/0] and [0/1] Padé shape functions, imaged through shadows and accretion discs,
+                        and shown dynamically stable by third-order WKB quasinormal-mode analysis.</p>
+                    <div class="links"><a href="https://doi.org/10.1016/j.physletb.2026.141186" target="_blank" rel="noopener">Paper</a></div>
+                </article>
+                <article class="pub">
+                    <div class="pub-tag">Under review · Classical and Quantum Gravity</div>
+                    <h4>Observational Signatures of Static and Rotating Wormholes Embedded in Dark Matter</h4>
+                    <p class="authors">Z. Hassan, <u>P. Balani</u>, P. K. Sahoo</p>
+                    <p>Shadows and accretion-disc images of wormholes inside NFW and solitonic dark matter halos (NGC
+                        2366 parameters), revealing a photon-sphere bifurcation between cuspy and cored profiles.</p>
+                    <div class="links"><a href="https://arxiv.org/abs/2608.09974" target="_blank" rel="noopener">arXiv</a></div>
+                </article>
+            </div>
+
+            <h3 class="group-title">LLM Safety &amp; Evaluation</h3>
+            <div class="pub-list">
+                <article class="pub">
+                    <div class="pub-tag">Manuscript 2026</div>
+                    <h4>Hard Negatives Reveal What Easy Negatives Hide: Cross-Lingual Harmfulness Representations
+                        Degrade with Resource Tier</h4>
+                    <p class="authors"><u>P. Balani</u>, S. Panda</p>
+                    <p>English-trained harmfulness probes transfer to nine languages with AUROC &gt; 0.98 on easy
+                        negatives, but on hard negatives the AUROC drop grows from 0.003 (English) to 0.276
+                        (low-resource) on Qwen2.5-7B, replicated on Aya Expanse.</p>
+                    <div class="links"><a href="https://github.com/Metrex-Nova/Cross-Lingual-Harmfulness-Representations-Degrade-with-Resource-Tier-Under-Hard-Negatives" target="_blank" rel="noopener">Paper</a></div>
+                </article>
+                <article class="pub">
+                    <div class="pub-tag">Manuscript 2026</div>
+                    <h4>Reporting Under Pressure: Separating Factual and Tonal Sycophancy in LLM Statistical Analysis</h4>
+                    <p class="authors"><u>P. Balani</u>, S. Panda</p>
+                    <p>A 4 × 4 factorial study (480 responses) showing editorial framing shifts an LLM's tone broadly
+                        but distorts its factual claims only in specific framing–data combinations.</p>
+                    <div class="links"><a href="https://github.com/Metrex-Nova/Separating-Factual-and-Tonal-Sycophancy-in-LLM-Statistical-Analysis" target="_blank" rel="noopener">Paper</a></div>
+                </article>
+                <article class="pub">
+                    <div class="pub-tag">arXiv preprint 2026</div>
+                    <h4>LLMs Don't Pay for the Jump</h4>
+                    <p class="authors"><u>P. Balani</u>, S. Panda</p>
+                    <p>Argues via thermodynamic coupling that a system needs a physical mechanism making epistemic error
+                        costly enough to force revision, which fixed-weight transformer inference lacks.</p>
+                    <div class="links"><a href="https://arxiv.org/abs/2608.14397" target="_blank" rel="noopener">arXiv</a></div>
+                </article>
             </div>
         </section>
 
-        <!-- Experience Section  -->
+        <!-- Experience -->
         <section id="experience">
             <h2 class="section-title">Experience</h2>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3 class="experience-title">Research Intern</h3>
-                    <div class="experience-date">Sep 2024 - Present</div>
+            <div class="exp">
+                <div class="exp-head">
+                    <h3>Google Summer of Code — ML4SCI, DeepLense</h3>
+                    <span class="meta">May 2026 – Sep 2026</span>
                 </div>
-                <p class="experience-location">BITS Pilani, Hyderabad Campus, Telangana, India</p>
-                <p class="experience-details">Project: Astrophysical Objects in General Relativity and Modified
-                    Gravities.
-                </p>
-                <p class="experience-details">
-                    Tech: Numerical Analysis, General Relativity, Pytearcat, Matlab, Mathematica, Latex.
-                </p>
+                <p class="exp-role">Contributor</p>
+                <ul>
+                    <li>Built neural operator surrogates that map lens mass distributions and source light profiles
+                        directly to lensed images and deflection fields, replacing repeated lens-equation solves.</li>
+                    <li>Designed two new architectures: <strong>HC-UNO</strong> (hypernetwork-conditioned U-shaped
+                        neural operator) and <strong>BALANI-NO</strong> (spectral operator with a learned rational pole
+                        branch in |k|).</li>
+                    <li>Benchmarked against ten baselines (7 seeds each) on Darcy flow, Navier–Stokes and lensing:
+                        lowest zero-shot error on Darcy (0.1194 vs. 0.1300 for FNO), Navier–Stokes and every lensing
+                        split.</li>
+                </ul>
+                <div class="stack"><span>Python</span><span>PyTorch</span><span>FNO / UNO</span><span>Lenstronomy</span></div>
             </div>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3 class="experience-title">Data Science Intern</h3>
-                    <div class="experience-date">June 2025</div>
+            <div class="exp">
+                <div class="exp-head">
+                    <h3>Research Intern — Gravitational &amp; Theoretical Physics, BITS Pilani</h3>
+                    <span class="meta">Jan 2025 – Present</span>
                 </div>
-                <p class="experience-location">Amukha Technologies Private Limited, Mumbai, India</p>
-                <p class="experience-details">Project: To Developed a risk-based loan pricing Index to improved
-                    prediction accuracy by loan pricing dynamics of Indian financial market system. Engineered financial
-                    features and built ML
-                    pipelines.</p>
-                <p class="experience-details">
-                    Tech: XGBoost, Random Forest, SVM, Linear/Polynomial Regression.
-                </p>
+                <p class="exp-role">Researcher</p>
+                <ul>
+                    <li>First-authored <em>Annalen der Physik</em> paper: traversable wormholes in f(R, L<sub>m</sub>, T)
+                        gravity, solved analytically and numerically; stability via TOV equilibrium, volume integral
+                        quantifier, sound speed and adiabatic index.</li>
+                    <li>Built a full observational pipeline (null-geodesic ray tracing, shadow maps, Doppler-corrected
+                        accretion-disk imaging) for static and rotating wormholes in NFW and solitonic halos.</li>
+                    <li>WKB quasinormal-mode and ringdown analysis across scalar, electromagnetic and axial gravitational
+                        perturbations, cross-checked with time-domain evolution.</li>
+                </ul>
+                <div class="stack"><span>Mathematica</span><span>Python / SciPy</span><span>Pytearcat</span><span>MATLAB</span><span>LaTeX</span></div>
+            </div>
+            <div class="exp">
+                <div class="exp-head">
+                    <h3>Data Science Intern — Amukha Technologies Pvt. Ltd.</h3>
+                    <span class="meta">June 2025</span>
+                </div>
+                <p class="exp-role">Mumbai, India</p>
+                <ul>
+                    <li>Built a risk-based loan pricing model with engineered financial features, improving R² by 58%
+                        over baseline (0.30 vs. 0.19; best MSE 0.203 with XGBoost).</li>
+                    <li>Deployed an explainable Streamlit application with interactive visualizations for risk
+                        profiling.</li>
+                </ul>
+                <div class="stack"><span>XGBoost</span><span>Random Forest</span><span>SVM</span><span>Streamlit</span></div>
             </div>
         </section>
-        <!-- Projects Section -->
+
+        <!-- Projects -->
         <section id="projects">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Logic Parser" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Logic Parser</h3>
-                        <p class="project-description">A propositional logic system in C with 18 algorithms for parsing,
-                            CNF conversion, truth table generation, and DIMACS output for SAT solvers.</p>
-                        <span class="research-link"><a href="https://logic-assignment-sspp.vercel.app"
-                                target="_blank">Website
-                                Link</a></span>
-                        <span class="github-link"><a href="https://github.com/Metrex-Nova/LogicAssignmentSSPP"
-                                target="_blank">Github Link</a></span>
-                        <span class="github-link"><a href="https://logic-assignment-sspp.vercel.app/web3.html"
-                                target="_blank">Demo Link</a></span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="LPI Model" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">LPI Model</h3>
-                        <p class="project-description">Industry-grade loan pricing model using XGBoost and Random
-                            Forest, deployed via Streamlit. Focus on interpretability and regulatory alignment.</p>
-                        <span class="github-link"><a href="https://github.com/Metrex-Nova/PS1-project"
-                                target="_blank">Github Link</a></span>
-
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Queuing Analysis" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Queuing Analysis</h3>
-                        <p class="project-description">Analyzed the Iridium satellite network using (M/M/s) queueing
-                            models in Python to determine optimal buffer size.</p>
-                    </div>
-                    <span class="research-link"><a
-                            href="https://github.com/Metrex-Nova/mms-queueing-simulation-python/blob/main/Operation_Research_Assignment.pdf"
-                            target="_blank">Paper Link</a></span>
-                    <span class="github-link"><a href="https://github.com/Metrex-Nova/mms-queueing-simulation-python"
-                            target="_blank">Github Link</a></span>
-
-                </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Dafney Verification" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Dafney Verification Experiments</h3>
-                        <p class="project-description">Formal verification of distributed systems using the Dafny
-                            verification language to prove correctness properties.</p>
-                        <span class="research-link"><a href="https://dafny-verification-experiments.vercel.app/"
-                                target="_blank">Website
-                                Link</a></span>
-                        <span class="github-link"><a
-                                href="https://github.com/Metrex-Nova/Dafny-Verification-Experiments"
-                                target="_blank">Github Link</a></span>
-
-                    </div>
-                </div>
+                <article class="project">
+                    <h3>FDM-Lens-Time</h3>
+                    <p class="project-sub">Temporal lensing signatures of fuzzy dark matter</p>
+                    <p>Single frames sit at chance (20%); an ordered 3D-CNN on κ(x, t) sequences reaches 88.3%, with a
+                        26.3-point gain from temporal order alone.</p>
+                    <div class="stack"><span>Python</span><span>PyTorch</span><span>3D-CNN</span></div>
+                    <a class="plink" href="https://github.com/Metrex-Nova/fdm-lens-time" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                </article>
+                <article class="project">
+                    <h3>Neural Operator Lensing Surrogate</h3>
+                    <p class="project-sub">Rotating NFW wormhole lensing</p>
+                    <p>Replaced an RK45 null-geodesic ray tracer with a Fourier Neural Operator: 6,392× faster, 32% lower
+                        test MSE than an MLP baseline.</p>
+                    <div class="stack"><span>Python</span><span>PyTorch</span><span>FNO</span></div>
+                    <a class="plink" href="https://github.com/Metrex-Nova/Neural-Operator-Surrogate-for-Rotating-NFW-Wormhole-Lensing" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                </article>
+                <article class="project">
+                    <h3>Physics-Informed Lensing Inversion</h3>
+                    <p class="project-sub">Differentiable forward model in a U-Net loss</p>
+                    <p>FFT Poisson solver → deflection → ray shooting. 2.5× lower re-lensing MSE, near-flat noise
+                        degradation (1.07× vs. 3.6×).</p>
+                    <div class="stack"><span>Python</span><span>PyTorch</span><span>U-Net</span></div>
+                    <a class="plink" href="https://github.com/Metrex-Nova/Physics-Informed-Deep-Learning-for-Gravitational-Lensing-Inverse-Problems" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                </article>
+                <article class="project">
+                    <h3>Query Optimizer &amp; B+ Trees</h3>
+                    <p class="project-sub">For pySimpleDB</p>
+                    <p>Selection pushdown, join reordering and composite-key B+ tree indexes. A four-table join runs in
+                        0.18 s; the default planner didn't finish in 8 minutes.</p>
+                    <div class="stack"><span>Python</span><span>Databases</span></div>
+                    <a class="plink" href="https://github.com/Metrex-Nova/Query-Optimization" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                </article>
+                <article class="project">
+                    <h3>VaultGate</h3>
+                    <p class="project-sub">Blockchain-anchored proxy re-encryption</p>
+                    <p>Every decryption gated on a live on-chain revocation flag; vault secret split across n enclaves
+                        with a (t, n) Shamir threshold scheme.</p>
+                    <div class="stack"><span>Rust</span><span>Solidity</span><span>Cryptography</span></div>
+                </article>
+                <article class="project">
+                    <h3>Propositional Logic Engine</h3>
+                    <p class="project-sub">18 algorithms in C</p>
+                    <p>Parsing, CNF conversion, truth tables and DIMACS export for SAT solver compatibility.</p>
+                    <div class="stack"><span>C</span><span>Logic</span></div>
+                    <a class="plink" href="https://github.com/Metrex-Nova/LogicAssignmentSSPP" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="plink" href="https://logic-assignment-sspp.vercel.app" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Site</a>
+                </article>
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Skills -->
         <section id="skills">
             <h2 class="section-title">Skills</h2>
-            <div class="skills-container">
-                <div class="skill-item">Python</div>
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">TypeScript</div>
-                <div class="skill-item">Java</div>
-                <div class="skill-item">C</div>
-                <div class="skill-item">SQL</div>
-                <div class="skill-item">Mathematica</div>
-                <div class="skill-item">Next.js 14</div>
-                <div class="skill-item">React/React Native</div>
-                <div class="skill-item">Node.js</div>
-                <div class="skill-item">Scikit-learn</div>
-                <div class="skill-item">XGBoost</div>
-                <div class="skill-item">Numerical Relativity</div>
-                <div class="skill-item">Differential Geometry</div>
-                <div class="skill-item">Tensor Calculus</div>
-                <div class="skill-item">Git</div>
-                <div class="skill-item">Docker</div>
-                <div class="skill-item">LaTeX</div>
-            </div>
-        </section>
-
-        <!-- Talks and Presentations Section -->
-        <section id="talks">
-            <h2 class="section-title">Talks & Presentations</h2>
-            <div class="talks-container">
-                <div class="talk-item">
-                    <h3 class="talk-title">Could Dark Matter Be Made of Wormholes?</h3>
-                    <p class="talk-location">Axiom, BITS Pilani</p>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <p>Python · C · C++ · Java · JavaScript · SQL · Solidity · Rust</p>
                 </div>
-                <div class="talk-item">
-                    <h3 class="talk-title">Traversable Wormholes in f(R, L_m, T) Gravity Using Anisotropic Fluids</h3>
-                    <p class="talk-location">Research Presentation</p>
+                <div class="skill-group">
+                    <h3>ML &amp; Deep Learning</h3>
+                    <p>PyTorch · scikit-learn · XGBoost · Neural operators (FNO, UNO, DeepONet) · PINNs</p>
                 </div>
-                <div class="talk-item">
-                    <h3 class="talk-title">Quantum Gravity Approaches to Cosmological Singularities</h3>
-                    <p class="talk-location">International Conference on Gravitation</p>
+                <div class="skill-group">
+                    <h3>Scientific Computing</h3>
+                    <p>NumPy · SciPy · SymPy · Pandas · Matplotlib · Mathematica · MATLAB</p>
+                </div>
+                <div class="skill-group">
+                    <h3>Systems &amp; Tools</h3>
+                    <p>Git · Linux · LaTeX · PostgreSQL · Docker · FastAPI · Hardhat</p>
+                </div>
+                <div class="skill-group">
+                    <h3>Leadership</h3>
+                    <p>Core Member, Axiom (ran the campus Integration Bee) · Volunteer, Nirman Club · Core Member, Shreshtha (Mental Wellness)</p>
+                </div>
+                <div class="skill-group">
+                    <h3>Spoken Languages</h3>
+                    <p>English (C2) · Hindi · Sindhi · Sanskrit (written) · Chinese (learning)</p>
                 </div>
             </div>
         </section>
 
-        <!-- Think Space Section -->
-        <section id="think-space">
-            <h2 class="section-title">Think Space</h2>
-            <div class="courses-grid">
-                <div class="course-item">
-                    <h3 class="course-name">Cosmology</h3>
-                    <p class="course-details">FRW Metric, Cosmic Inflation, Dark Matter, CMB, Big Bang Nucleosynthesis,
-                        Cosmological Constant, Hubble Parameter</p>
-                    <span class="course-grade">Grade: A (Institute Topper)</span>
-                </div>
-                <div class="course-item">
-                    <h3 class="course-name">Numerical Analysis</h3>
-                    <p class="course-details">Finite Difference Methods, PDE Solvers, Runge-Kutta Methods, Error
-                        Analysis, Gaussian Quadrature</p>
-                    <span class="course-grade">Grade: A-</span>
-                </div>
-                <div class="course-item">
-                    <h3 class="course-name">Optimization Theory</h3>
-                    <p class="course-details">Linear/Nonlinear Programming, KKT Conditions, Simplex Method, Duality
-                        Theory, Genetic Algorithms</p>
-                    <span class="course-grade">Grade: A</span>
-                </div>
-                <div class="course-item">
-                    <h3 class="course-name">Graphs and Networks</h3>
-                    <p class="course-details">Graph Algorithms, Network Flows, Spanning Trees, Planarity, Chromatic
-                        Number, Shortest Path Problems</p>
-                    <span class="course-grade">Grade: A</span>
-                </div>
-            </div>
-        </section>
+        <!-- Contact -->
         <section id="contact">
             <h2 class="section-title">Contact</h2>
-            <div class="contact-container">
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Work Email</h3>
-                        <a href="mailto:parasbalani748@gmail.com">parasbalani748@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-university"></i>
-                        <h3>School Email</h3>
-                        <a href="mailto:f20230738@hyderabad.bits-pilani.ac.in">f20230738@hyderabad.bits-pilani.ac.in</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <h3>Phone</h3>
-                        <a href="tel:+918529818697">+91 85298 18697</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/pbalani-mnova/"
-                            target="_blank">linkedin.com/in/pbalani-mnova</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-flask"></i>
-                        <h3>ResearchGate</h3>
-                        <a href="https://www.researchgate.net/scientific-contributions/Paras-Balani-2331032192"
-                            target="_blank">ResearchGate Profile</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/Metrex-Nova" target="_blank">github.com/Metrex-Nova</a>
-                    </div>
-                </div>
+            <div class="contact-grid">
+                <a class="contact-item" href="mailto:parasbalani748@gmail.com"><i class="fas fa-envelope"></i><span>parasbalani748@gmail.com</span></a>
+                <a class="contact-item" href="mailto:f20230738@hyderabad.bits-pilani.ac.in"><i class="fas fa-university"></i><span>f20230738@hyderabad.bits-pilani.ac.in</span></a>
+                <a class="contact-item" href="tel:+918529818697"><i class="fas fa-phone"></i><span>+91 85298 18697</span></a>
+                <a class="contact-item" href="https://linkedin.com/in/pbalani-mnova/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>linkedin.com/in/pbalani-mnova</span></a>
+                <a class="contact-item" href="https://github.com/Metrex-Nova" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>github.com/Metrex-Nova</span></a>
+                <a class="contact-item" href="https://scholar.google.com/citations?user=f8gTBRsAAAAJ" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i><span>Google Scholar</span></a>
             </div>
         </section>
-    </div>
+    </main>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Paras Balani. All rights reserved.</p>
-            <p>Dual Degree: B.Tech. in Computer Science & M.Sc. in Mathematics</p>
-            <p>BITS Pilani, Hyderabad Campus | CGPA: 8.76/10</p>
-
-            <div class="footer-links">
-                <a href="mailto:parasbalani748@gmail.com">
-                    <i class="fas fa-envelope"></i> Work Email
-                </a>
-                <a href="mailto:f20230738@hyderabad.bits-pilani.ac.in">
-                    <i class="fas fa-university"></i> School Email
-                </a>
-                <a href="tel:+918529818697">
-                    <i class="fas fa-phone"></i> +91 85298 18697
-                </a>
-                <a href="https://www.linkedin.com/in/pbalani-mnova/" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://www.researchgate.net/scientific-contributions/Paras-Balani-2331032192" target="_blank">
-                    <i class="fas fa-flask"></i> ResearchGate
-                </a>
-                <a href="https://github.com/Metrex-Nova" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-
-            <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--secondary-color);">
-                "The only way to learn mathematics is to do mathematics." – Paul Halmos
-            </p>
-        </div>
+        <p class="quote">"The only way to learn mathematics is to do mathematics." — Paul Halmos</p>
+        <p>&copy; 2026 Paras Balani</p>
     </footer>
-
 
     <script src="app2.js"></script>
 </body>
